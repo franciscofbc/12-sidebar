@@ -296,3 +296,80 @@ main {
 
   animation: animation 1s linear infinite alternate;
 }
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  min-width: 25rem;
+  height: 100vh;
+  background: var(--white);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: hidden;
+}
+
+.sidebar .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1rem 1.5rem;
+}
+
+.sidebar .header img {
+  max-width: 12.25rem;
+}
+
+.sidebar .header .btn-close {
+  display: flex;
+
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+
+  color: var(--red-dark);
+  font-size: 1.75rem;
+}
+
+.sidebar .links {
+  text-transform: capitalize;
+  letter-spacing: var(--letterSpacing);
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+.sidebar .links a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  color: var(--grey-700);
+
+  transition: var(--transition);
+}
+
+.sidebar .links a:hover {
+  background: var(--grey-100);
+}
+
+.sidebar .social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2.25rem;
+}
+
+.sidebar .social-links a {
+  color: var(--primary-500);
+  font-size: 1.5rem;
+  transition: var(--transition);
+}
+
+.sidebar .social-links a:hover {
+  color: var(--primary-900);
+}
