@@ -312,6 +312,12 @@ main {
   overflow-y: hidden;
 }
 
+@media (max-width: 680px) {
+  .sidebar {
+    min-width: 100vw;
+  }
+}
+
 .sidebar .header {
   display: flex;
   align-items: center;
