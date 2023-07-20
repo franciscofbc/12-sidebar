@@ -6,8 +6,8 @@ const App = () => {
   return (
     <main>
       <Home />
-      <Modal />
       <Sidebar />
+      <Modal />
     </main>
   );
 };
